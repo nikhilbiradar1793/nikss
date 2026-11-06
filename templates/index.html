@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Nikhil Biradar, Python Flask Developer, Coding Educator and Founder of NIKSS Coding Hub.">
+
+  <meta name="keywords"
+        content="Nikhil Biradar, Software Developer, Python Developer, Flask Developer, Web Developer, NIKSS Coding Hub">
+
+  <meta name="author" content="Nikhil Biradar">
+
+  <meta name="theme-color" content="#080d1b">
+
+  <title>Nikhil Biradar | Software Developer Portfolio</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND EFFECTS -->
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="main-header">
+
+  <nav class="navbar wrap" aria-label="Main navigation">
+
+    <!-- BRAND LOGO -->
+    <a href="#home" class="logo" aria-label="Nikhil Biradar Portfolio Home">
+
+      <span class="logo-icon">N</span>
+
+      <span class="logo-text">
+
+                NIKHIL <span>BIRADAR</span>
+                <small>PORTFOLIO</small>
+
+            </span>
+
+    </a>
+
+
+    <!-- MOBILE MENU BUTTON -->
+    <button class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks">
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+
+    <!-- NAVIGATION LINKS -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link active"><span>About me</span></a></li>
+      <li><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+      <li><a href="#projects" class="nav-link"><span>Portfolio</span></a></li>
+    </ul>
+
+    <!-- HIRE ME BUTTON -->
+    <a href="#contact" class="hire-btn">
+      <i class="fas fa-paper-plane"></i>
+      <span>Hire Me</span>
+    </a>
+
+  </nav>
+
+</header>
+
+
+<!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
+<main>
+
+
+  <!-- =====================================
+       HERO SECTION
+  ====================================== -->
+
+  <section class="hero wrap" id="home">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-copy">
+      <p class="hello">Hi, I am</p>
+      <h1>Nikhil <span class="hero-last-name">Biradar</span></h1>
+      <h2>Software Developer <span class="slash">/</span> UI &amp; Web Developer</h2>
+
+      <div class="quick-links hero-social" aria-label="Social media links">
+        <a href="mailto:nikhilbiradar1793@gmail.com" aria-label="Email Nikhil"><i class="fas fa-at"></i></a>
+        <a href="https://www.instagram.com/nikss.coding.hub" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@nikss.coding.hub.official" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://github.com/nikhilbiradar1793" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nikhil-balaji-biradar-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+
+    <!-- RIGHT PROFILE IMAGE -->
+    <div class="hero-visual">
+
+      <div class="photo-frame">
+
+
+
+        <img
+                src="{{ url_for('static', filename='images/profile.jpg') }}"
+                alt="Nikhil Biradar"
+                onerror="
+                        this.style.display='none';
+                        this.nextElementSibling.style.display='grid';
+                    ">
+
+        <div class="photo-placeholder">
+
+          <div class="placeholder-initials">
+            NB
+          </div>
+
+          <span>Add Your Photo</span>
+
+          <small>
+            static/images/profile.jpg
+          </small>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       TECHNOLOGY TICKER
+  ====================================== -->
+
+  <section class="ticker" aria-label="Technologies">
+
+    <div class="ticker-track">
+
+      PYTHON <i>✳</i>
+      JAVA <i>✳</i>
+      FLASK <i>✳</i>
+      HTML &amp; CSS <i>✳</i>
+      JAVASCRIPT <i>✳</i>
+      MYSQL <i>✳</i>
+      CYBERSECURITY <i>✳</i>
+      SOFTWARE DEVELOPMENT <i>✳</i>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       ABOUT SECTION
+  ====================================== -->
+
+  <section class="section wrap" id="about">
+
+    <div class="section-label">
+      01 / ABOUT ME
+    </div>
+
+    <div class="about-grid">
+
+      <h2>
+        Curious Mind.
+        <br>
+        <span class="muted">Practical Builder.</span>
+      </h2>
+
+      <div>
+
+        <p class="section-copy">
+          I am a Computer Science postgraduate student
+          interested in software development, web technologies
+          and cybersecurity.
+
+          I enjoy developing practical applications using
+          Python, Flask and database technologies.
+        </p>
+
+        <p class="section-copy">
+          Along with development, I am the creator of
+          <strong>NIKSS Coding Hub</strong>, where I teach
+          programming concepts through beginner-friendly
+          coding tutorials.
+
+          My goal is to make technology simple, practical
+          and understandable for everyone.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- ABOUT STATS -->
+    <div class="stats">
+
+      <div>
+        <strong>Python</strong>
+        <span>Programming</span>
+      </div>
+
+      <div>
+        <strong>Flask</strong>
+        <span>Backend Development</span>
+      </div>
+
+      <div>
+        <strong>SQL</strong>
+        <span>Database Management</span>
+      </div>
+
+      <div>
+        <strong>Teaching</strong>
+        <span>Coding Education</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       SKILLS SECTION
+  ====================================== -->
+
+  <section class="section skills-section" id="skills">
+
+    <div class="wrap">
+
+      <div class="section-label">
+        02 / TECHNICAL SKILLS
+      </div>
+
+      <h2 class="section-heading">
+        My Technical
+        <span class="muted">Skills.</span>
+      </h2>
+
+
+      <div class="skill-grid">
+
+        <article class="skill-card">
+
+          <span class="skill-icon">Py</span>
+
+          <h3>Python</h3>
+
+          <p>
+            Programming, scripting, automation
+            and application development.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <span class="skill-icon">Fl</span>
+
+          <h3>Flask</h3>
+
+          <p>
+            Backend development, routing,
+            REST fundamentals and web applications.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <span class="skill-icon">DB</span>
+
+          <h3>Database</h3>
+
+          <p>
+            SQLite, MySQL, SQLAlchemy
+            and database fundamentals.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <span class="skill-icon">&lt;/&gt;</span>
+
+          <h3>Frontend Development</h3>
+
+          <p>
+            HTML, CSS, JavaScript
+            and responsive web design.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <span class="skill-icon">CS</span>
+
+          <h3>Cybersecurity</h3>
+
+          <p>
+            Nmap, Metasploit, Burp Suite
+            and Wireshark.
+          </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <span class="skill-icon">Git</span>
+
+          <h3>Tools &amp; Systems</h3>
+
+          <p>
+            Linux, Windows, Git,
+            GitHub and development tools.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       PROJECTS SECTION
+  ====================================== -->
+
+  <section class="section wrap" id="projects">
+
+    <div class="section-label">
+      03 / MY PROJECTS
+    </div>
+
+    <h2 class="section-heading">
+      Projects &amp;
+      <span class="muted">Development.</span>
+    </h2>
+
+
+    <div class="project-grid">
+
+
+      <!-- PROJECT 1 -->
+      <article class="project-card featured">
+
+        <div>
+
+          <div class="project-number">
+            01 / FEATURED PROJECT
+          </div>
+
+          <div class="project-art">
+
+            <span>NIKSS</span>
+
+            <small>CODING HUB</small>
+
+            <div class="art-lines"></div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-info">
+
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>SQLAlchemy</span>
+            <span>HTML</span>
+          </div>
+
+          <h3>NIKSS Coding Hub</h3>
+
+          <p>
+            A coding education platform developed
+            to provide programming learning resources
+            and practical development experiences.
+          </p>
+
+          <a href="https://nikss-coding.onrender.com"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visit Live Website ↗
+          </a>
+
+          <br><br>
+
+          <a href="https://github.com/nikhilbiradar1793/nikss.coding"
+             target="_blank"
+             rel="noopener noreferrer">
+            View Source Code ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 2 -->
+      <article class="project-card">
+
+        <div class="project-number">
+          02 / CONTENT CREATION
+        </div>
+
+        <div class="project-art art-content">
+
+          <span>{ }</span>
+
+          <small>LEARN · BUILD · GROW</small>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="project-tags">
+            <span>Java</span>
+            <span>Python</span>
+            <span>Teaching</span>
+          </div>
+
+          <h3>Coding Education</h3>
+
+          <p>
+            Beginner-friendly programming tutorials,
+            coding explanations and practical lessons
+            through NIKSS Coding Hub.
+          </p>
+
+          <a href="https://www.youtube.com/@cybersequrity9405"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visit YouTube ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 3 -->
+      <article class="project-card">
+
+        <div class="project-number">
+          03 / CYBERSECURITY
+        </div>
+
+        <div class="project-art art-security">
+
+          <span>01<span class="accent">/</span>0</span>
+
+          <small>LEARN · TEST · SECURE</small>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="project-tags">
+            <span>Nmap</span>
+            <span>Linux</span>
+            <span>Security</span>
+          </div>
+
+          <h3>Cybersecurity Practice</h3>
+
+          <p>
+            Practical cybersecurity learning
+            using security tools and authorized
+            lab environments.
+          </p>
+
+          <a href="https://github.com/nikhilbiradar1793"
+             target="_blank"
+             rel="noopener noreferrer">
+            Explore GitHub ↗
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       TEACHING SECTION
+  ====================================== -->
+
+  <section class="youtube-section" id="teaching">
+
+    <div class="wrap">
+
+      <div class="section-label">
+        04 / YOUTUBE &amp; TEACHING
+      </div>
+
+
+      <div class="youtube-container">
+
+
+        <!-- CHANNEL LOGO -->
+        <div class="youtube-logo">
+
+          <img
+                  src="{{ url_for('static', filename='images/nikss-logo.png') }}"
+                  alt="NIKSS Coding Hub Logo"
+                  onerror="this.style.display='none';">
+
+        </div>
+
+
+        <!-- CHANNEL INFORMATION -->
+        <div class="youtube-content">
+
+                    <span class="youtube-label">
+                        YOUTUBE CODING EDUCATOR
+                    </span>
+
+          <h2>NIKSS CODING HUB</h2>
+
+          <h3>Learn Coding Step by Step 🚀</h3>
+
+          <p>
+            Welcome to NIKSS Coding Hub!
+
+            I create programming tutorials designed
+            to make coding simple and understandable
+            for beginners.
+
+            My teaching topics include Java, Python,
+            programming fundamentals, web development
+            and cybersecurity.
+          </p>
+
+
+          <!-- TEACHING TOPICS -->
+          <div class="teaching-skills">
+
+            <span>Java Programming</span>
+            <span>Python Programming</span>
+            <span>Cybersecurity</span>
+            <span>Web Development</span>
+            <span>Programming Concepts</span>
+
+          </div>
+
+
+          <!-- YOUTUBE BUTTON -->
+          <a href="https://www.youtube.com/@cybersequrity9405"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="youtube-button">
+
+            <i class="fab fa-youtube"></i>
+            Subscribe on YouTube
+
+          </a>
+
+
+          <br>
+
+          <span class="youtube-role">
+                        Coding Teacher | YouTube Educator | Content Creator
+                    </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       EDUCATION SECTION
+  ====================================== -->
+
+  <section class="section education-section" id="education">
+
+    <div class="wrap">
+
+      <div class="section-label">
+        05 / EDUCATION &amp; CERTIFICATIONS
+      </div>
+
+      <h2 class="section-heading">
+        My Learning
+        <span class="muted">Journey.</span>
+      </h2>
+
+
+      <div class="timeline">
+
+
+        <!-- M.SC -->
+        <div class="timeline-item">
+
+          <span class="timeline-dot"></span>
+
+          <div>
+
+            <small>POSTGRADUATE</small>
+
+            <h3>M.Sc. Computer Science (pursuing)</h3>
+
+            <p>
+              Maharashtra Mahavidyalaya,
+              Nilanga · SRTMU
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- B.SC -->
+        <div class="timeline-item">
+
+          <span class="timeline-dot"></span>
+
+          <div>
+
+            <small>UNDERGRADUATE</small>
+
+            <h3>B.Sc. Computer Science</h3>
+
+            <p>
+              SRTMU, Nanded
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- CERTIFICATION -->
+        <div class="timeline-item">
+
+          <span class="timeline-dot"></span>
+
+          <div>
+
+            <small>CERTIFICATION</small>
+
+            <h3>Penetration Testing &amp; Ethical Hacking</h3>
+
+            <p>
+              Great Learning
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- TRAINING -->
+        <div class="timeline-item">
+
+          <span class="timeline-dot"></span>
+
+          <div>
+
+            <small>PROFESSIONAL TRAINING</small>
+
+            <h3>Cybersecurity Training</h3>
+
+            <p>
+              Fortune Cloud Technologies, Pune
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       SOCIAL MEDIA SECTION
+  ====================================== -->
+
+  <section class="section wrap" id="social">
+
+    <div class="section-label">
+      06 / CONNECT WITH ME
+    </div>
+
+    <h2 class="section-heading">
+      Find Me
+      <span class="muted">Online.</span>
+    </h2>
+
+
+    <div class="social-grid">
+
+
+      <!-- YOUTUBE -->
+      <a href="https:https://www.youtube.com/@nikss.coding.hub.official"
+         target="_blank"
+         rel="noopener noreferrer">
+
+                <span>
+                    <i class="fab fa-youtube"></i>
+                </span>
+
+        <div>
+          <b>YouTube</b>
+          <small>NIKSS Coding Hub</small>
+        </div>
+
+        <em>↗</em>
+
+      </a>
+
+
+      <!-- INSTAGRAM -->
+      <a href="https://www.instagram.com/nikss.coding.hub"
+         target="_blank"
+         rel="noopener noreferrer">
+
+                <span>
+                    <i class="fab fa-instagram"></i>
+                </span>
+
+        <div>
+          <b>Instagram</b>
+          <small>Coding Content</small>
+        </div>
+
+        <em>↗</em>
+
+      </a>
+
+
+      <!-- LINKEDIN -->
+      <a href="https://www.linkedin.com/in/nikhil-balaji-biradar-"
+         target="_blank"
+         rel="noopener noreferrer">
+
+                <span>
+                    <i class="fab fa-linkedin-in"></i>
+                </span>
+
+        <div>
+          <b>LinkedIn</b>
+          <small>Professional Profile</small>
+        </div>
+
+        <em>↗</em>
+
+      </a>
+
+
+      <!-- GITHUB -->
+      <a href="https://github.com/nikhilbiradar1793"
+         target="_blank"
+         rel="noopener noreferrer">
+
+                <span>
+                    <i class="fab fa-github"></i>
+                </span>
+
+        <div>
+          <b>GitHub</b>
+          <small>Projects &amp; Source Code</small>
+        </div>
+
+        <em>↗</em>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================
+       CONTACT SECTION
+  ====================================== -->
+
+  <section class="contact-section" id="contact">
+
+    <div class="wrap contact-inner">
+
+      <div class="section-label">
+        07 / CONTACT ME
+      </div>
+
+      <h2>
+        Let's Build
+        <br>
+        Something Great.
+      </h2>
+
+      <p>
+        I am interested in software developer opportunities,
+        internships, collaborations and meaningful projects.
+
+        Let's connect and create something valuable together.
+      </p>
+
+
+      <a href="mailto:nikhilbiradar1793@gmail.com"
+         class="button primary">
+
+        <i class="fas fa-paper-plane"></i>
+        Connect With Me
+
+      </a>
+
+
+      <small class="contact-note">
+        Software Developer | Python &amp; Flask Developer
+      </small>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer wrap">
+
+  <a href="#home" class="logo">
+
+    <span class="logo-icon">N</span>
+
+    <span class="logo-text">
+            NIKHIL <span>BIRADAR</span>
+            <small>PORTFOLIO</small>
+        </span>
+
+  </a>
+
+
+  <span>
+        Built with Python &amp; Flask
+    </span>
+
+
+  <span>
+        © 2026 Nikhil Biradar. All Rights Reserved.
+    </span>
+
+</footer>
+
+
+<!-- =========================================
+     JAVASCRIPT
+     MOBILE NAVIGATION
+========================================= -->
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const navigationItems = document.querySelectorAll(".nav-link");
+
+
+    // OPEN / CLOSE MOBILE MENU
+
+    if (!menuToggle || !navLinks) return;
+
+    menuToggle.addEventListener("click", function () {
+
+      navLinks.classList.toggle("show");
+
+      const isOpen = navLinks.classList.contains("show");
+
+      menuToggle.setAttribute("aria-expanded", isOpen);
+
+      const icon = menuToggle.querySelector("i");
+
+      if (isOpen) {
+
+        icon.classList.replace("fa-bars", "fa-xmark");
+
+      } else {
+
+        icon.classList.replace("fa-xmark", "fa-bars");
+
+      }
+
+    });
+
+
+    // CLOSE MENU AFTER CLICKING NAVIGATION
+
+    navigationItems.forEach(function (link) {
+
+      link.addEventListener("click", function () {
+
+        navLinks.classList.remove("show");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        const icon = menuToggle.querySelector("i");
+
+        icon.classList.replace("fa-xmark", "fa-bars");
+
+
+        // ACTIVE NAVIGATION
+
+        navigationItems.forEach(function (item) {
+
+          item.classList.remove("active");
+
+        });
+
+        link.classList.add("active");
+
+      });
+
+    });
+
+
+    // CLOSE MENU WHEN CLICKING OUTSIDE
+
+    document.addEventListener("click", function (event) {
+
+      if (
+              !navLinks.contains(event.target) &&
+              !menuToggle.contains(event.target)
+      ) {
+
+        navLinks.classList.remove("show");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        const icon = menuToggle.querySelector("i");
+
+        icon.classList.replace("fa-xmark", "fa-bars");
+
+      }
+
+    });
+
+
+    // CLOSE MENU WITH ESCAPE KEY
+
+    document.addEventListener("keydown", function (event) {
+
+      if (event.key === "Escape") {
+
+        navLinks.classList.remove("show");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        const icon = menuToggle.querySelector("i");
+
+        icon.classList.replace("fa-xmark", "fa-bars");
+
+      }
+
+    });
+
+  });
+
+</script>
+
+</body>
+</html>
